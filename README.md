@@ -1,7 +1,7 @@
-#Overview
+# Overview
 Thanks for the opportunity to complete a coding assessment for QuiO. The following repository corresponds to [this prompt] (https://docs.google.com/document/d/1Lr0SQ4j9-i5y8MUbWsqd0vaXvNKtcWeeNhCWUojkSQ4/edit?usp=sharing)
 
-#Repo Contents
+# Repo Contents
 * All iterations of the interview function has been organized in the 'interviewIterations' directory. 'interview0.py' is the original given code in the prompt and each file is incremented accordingly based on the steps in the prompt.
 * The 'testFileStructure' directory is used for the black box tests. I've created files and subdirectories to cover the following use cases: 
   * Reads a file within a directory
@@ -12,7 +12,7 @@ Thanks for the opportunity to complete a coding assessment for QuiO. The followi
 * ./tests.sh - Will run the the black box tests and static analyses
 
 
-#Written Responses to Prompt
+# Written Responses to Prompt
 * Step 1: Issues with interview0.py. First issue: the given code only printed out the even lines of each file. Second issue: the given code printed out a summary of the output multiple times instead of once at the end. Fixes are in interview1.py 
   * The first issue occurred because in each evaluation of the while loop, the ".readline()" method is invoked and the first line of the file is read. Once the first line of the file is read, the next time the method is called, it reads the second line. This occurs in within the while loop, and the second line is printed. This repeats with the 3rd line being evaluated as the criteria for the while loop, and the fourth line is printed, etc. To fix this, I removed the while loop and utilized the ".read()" method
   * The second issue occurs because the whole function is being called recursively, and prints out the current summary of traversed folders each time the function is called. To fix this, I created a helper function within the interview function that can be called recursively, and placed the line to print the output outside of this helper function.
@@ -33,12 +33,12 @@ Thanks for the opportunity to complete a coding assessment for QuiO. The followi
 
         M = 13 - 9 + 2(1)
         M = 6
-* Unusual Bug. I tested running the interview function in interview3.py twice, and received expected results. 
+* Unusual Bug. I tested running the interview function in interview3.py twice, and received expected results. Please give a nudge in the right direction.
 
 
 
 
-#Notes
+# Notes
 Errors found with prospector tool:
 
   interview2.py
