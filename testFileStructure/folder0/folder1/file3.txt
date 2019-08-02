@@ -1,0 +1,2 @@
+Contents of File 3
+Testing that function will read file within a directory two levels from the original

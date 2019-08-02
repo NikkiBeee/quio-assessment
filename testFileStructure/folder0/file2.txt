@@ -1,0 +1,2 @@
+Contents of File 2
+Testing that function will read *multiple* files within a directory

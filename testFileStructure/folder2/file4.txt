@@ -1,0 +1,2 @@
+Contents of File 4
+Additional folder and file to test the "unusual bug"
